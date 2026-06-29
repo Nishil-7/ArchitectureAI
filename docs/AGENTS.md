@@ -1,45 +1,81 @@
-Rules
+# AI Review Agents
 
-Use Java 21
+The platform uses multiple independent AI agents.
 
-Use Spring Boot 3
+Each agent analyzes the uploaded architecture from a different perspective.
 
-Use constructor injection only
+All agents execute concurrently using Java 21 Virtual Threads.
 
-No field injection
+---
 
-Use Lombok
+## Architecture Review Agent
 
-Use layered architecture
+Evaluates:
 
-Controller
+- Overall design
+- Scalability
+- Service interactions
+- Design patterns
 
-Service
+---
 
-Repository
+## Security Agent
 
-DTO
+Evaluates:
 
-Entity
+- IAM
+- Encryption
+- Network Security
+- Secrets Management
+- Least Privilege
 
-Exception
+---
 
-Config
+## Cost Optimization Agent
 
-Never expose entities directly.
+Evaluates:
 
-Always use DTOs.
+- AWS Pricing
+- Overprovisioned Resources
+- Reserved Instances
+- Storage Optimization
 
-Password must be BCrypt.
+---
 
-Authentication must use JWT.
+## Performance Agent
 
-Use MongoDB Atlas.
+Evaluates:
 
-Use ResponseEntity.
+- Latency
+- Throughput
+- Caching
+- Load Balancing
 
-Write JavaDocs.
+---
 
-Generate unit tests.
+## Reliability Agent
 
-Follow SOLID.
+Evaluates:
+
+- Fault Tolerance
+- High Availability
+- Disaster Recovery
+- Backup Strategy
+
+---
+
+## AWS Best Practices Agent
+
+Evaluates:
+
+- AWS Well-Architected Framework
+- Operational Excellence
+- Security
+- Reliability
+- Performance Efficiency
+- Cost Optimization
+- Sustainability
+
+---
+
+The orchestrator waits for all agents to complete and combines the results into a single optimization report.

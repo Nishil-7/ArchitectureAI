@@ -1,52 +1,59 @@
-AI Architecture Generator
+# Project Plan
 
-Backend
-- Spring Boot 3
-- Java 21
-- MongoDB Atlas
-- JWT Authentication
-- Spring Security
-- AWS SDK v2
+## Project Name
 
-Frontend
-- React
+AI-Powered Cloud Architecture Review & Optimization Platform
 
-Features
+---
 
-User Authentication
+## Objective
 
-Register
+Develop a platform that reviews cloud architectures and provides optimization recommendations.
 
-Login
+Instead of generating architectures, the platform evaluates an existing architecture using multiple specialized AI agents.
 
-JWT
+---
+
+## User Workflow
+
+1. Register/Login
+
+2. Create a Project
+
+3. Upload one or more of the following:
+
+- Architecture Diagram
+- Architecture Description
+- AWS Service List
+- Supporting Documentation
+
+4. AI Agents analyze the architecture concurrently.
+
+5. Results are aggregated.
+
+6. User receives
+
+- Security recommendations
+- Cost optimization suggestions
+- Performance improvements
+- Reliability recommendations
+- AWS Best Practice compliance
+- Overall architecture score
+
+7. User can revisit previous analyses.
+
+---
+
+## Core Modules
+
+Authentication
 
 Project Management
 
-Each user can create multiple projects.
+Architecture Upload
 
-Each project stores
+AI Review Engine
 
-- projectId
-- projectName
-- createdDate
-- chats
-- generated architecture
-- AWS resources
-- agent outputs
+Report Generation
 
-AI Agents
-
-Requirement Agent
-
-Architecture Agent
-
-Security Agent
-
-Cost Agent
-
-Validation Agent
-
-Diagram Agent
-
-All agents run concurrently using Java Virtual Threads.
+History Management

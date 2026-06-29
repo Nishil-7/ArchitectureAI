@@ -1,17 +1,45 @@
-# AI Architecture Generator
+# AI-Powered Cloud Architecture Review & Optimization Platform
 
 ## Overview
 
-AI-powered platform for generating cloud architecture diagrams from natural language.
+An intelligent platform that analyzes existing cloud architectures and provides optimization recommendations using multiple specialized AI agents.
 
-The system allows users to:
+Users can upload:
 
-- Register and Login
-- Create architecture projects
-- Chat with an AI assistant
-- Generate AWS architecture diagrams
-- Run multiple AI agents concurrently
-- Store project history
+- Cloud architecture diagrams
+- Architecture descriptions
+- AWS architecture documentation
+- Infrastructure details
+
+The platform analyzes the architecture from multiple perspectives simultaneously and provides actionable recommendations to improve the overall system.
+
+---
+
+## Features
+
+- User Authentication
+- Project Management
+- Architecture Upload
+- Architecture Review
+- Multi-Agent Analysis
+- Optimization Recommendations
+- Project History
+- AWS Best Practice Validation
+
+---
+
+## AI Review Agents
+
+Each uploaded architecture is reviewed independently by multiple AI agents.
+
+- Architecture Review Agent
+- Security Review Agent
+- Cost Optimization Agent
+- Performance Agent
+- Reliability Agent
+- Best Practices & Compliance Agent
+
+The results from all agents are aggregated into a comprehensive optimization report.
 
 ---
 
@@ -29,43 +57,9 @@ The system allows users to:
 ### Frontend
 
 - React
-- TypeScript
 
 ---
 
-## Features
-
-- User Authentication
-- Project Management
-- AI Chat
-- Architecture Generation
-- AWS Diagram Generation
-- Project History
-- Multi-Agent AI System
-
----
-
-## AI Agents
-
-- Requirement Agent
-- Architecture Agent
-- Security Agent
-- Cost Agent
-- Validation Agent
-- Diagram Agent
-
----
-
-## Project Structure
-
-backend/
-
-frontend/
-
-docs/
-
----
-
-## Status
+## Current Status
 
 🚧 Under Development

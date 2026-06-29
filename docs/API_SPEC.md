@@ -1,19 +1,13 @@
-POST /auth/register
-
-POST /auth/login
-
-GET /users/me
-
 POST /projects
 
 GET /projects
 
-GET /projects/{id}
+POST /projects/{id}/upload
 
-DELETE /projects/{id}
+POST /projects/{id}/review
 
-POST /projects/{id}/chat
+GET /projects/{id}/report
+
+GET /projects/{id}/recommendations
 
 GET /projects/{id}/chat
-
-POST /projects/{id}/generate
