@@ -6,7 +6,6 @@ import com.architectureai.backend.dto.RegisterRequest;
 import com.architectureai.backend.entity.User;
 import com.architectureai.backend.exception.InvalidCredentialsException;
 import com.architectureai.backend.exception.UserAlreadyExistsException;
-import com.architectureai.backend.exception.UserNotFoundException;
 import com.architectureai.backend.repository.UserRepository;
 import com.architectureai.backend.security.CustomUserDetails;
 import com.architectureai.backend.security.JwtService;
