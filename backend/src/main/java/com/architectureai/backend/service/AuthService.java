@@ -35,8 +35,7 @@ public class AuthService {
             UserRepository userRepository,
             PasswordEncoder passwordEncoder,
             JwtService jwtService,
-            AuthenticationManager authenticationManager
-    ) {
+            AuthenticationManager authenticationManager) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.jwtService = jwtService;
@@ -88,7 +87,8 @@ public class AuthService {
      */
     public AuthResponse login(LoginRequest request) {
         try {
-            // First determine if we should look up by username or email to perform authentication
+            // First determine if we should look up by username or email to perform
+            // authentication
             User user = userRepository.findByUsername(request.getUsername())
                     .or(() -> userRepository.findByEmail(request.getUsername()))
                     .orElseThrow(() -> new InvalidCredentialsException("Invalid username/email or password"));
@@ -97,9 +97,7 @@ public class AuthService {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
                             user.getUsername(),
-                            request.getPassword()
-                    )
-            );
+                            request.getPassword()));
 
             log.info("Successfully authenticated user: {}", user.getUsername());
             CustomUserDetails userDetails = new CustomUserDetails(user);
